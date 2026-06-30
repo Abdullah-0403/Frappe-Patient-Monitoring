@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "RECOMMENDATION-.YYYY.-.####",
+ "creation": "2026-06-30 10:54:36.392574",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "doctor_recommendations_for_patients_section",
+  "patient",
+  "doctor_name",
+  "date",
+  "symptoms",
+  "diagnosis",
+  "prescription",
+  "follow_up_date",
+  "severity"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctor_recommendations_for_patients_section",
+   "fieldtype": "Section Break",
+   "label": "Doctor Recommendations for Patients"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient Record",
+   "reqd": 1
+  },
+  {
+   "fieldname": "doctor_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Doctor Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "symptoms",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Symptoms",
+   "options": "Fever\nCough\nShortness of Breath\nChest Pain\nDizziness\nFatigue\nHeadache\nNausea\nBody Ache\nLoss of Appetite",
+   "reqd": 1
+  },
+  {
+   "fieldname": "diagnosis",
+   "fieldtype": "Select",
+   "label": "Diagnosis",
+   "options": "Hypertension\nDiabetes\nRespiratory Infection\nCardiac Issue\nAnemia\nArthritis\nPneumonia\nUrinary Tract Infection\nAnxiety/Depression\nGeneral Weakness",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prescription",
+   "fieldtype": "Small Text",
+   "label": "Prescription"
+  },
+  {
+   "fieldname": "follow_up_date",
+   "fieldtype": "Date",
+   "label": "Follow Up Date"
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "label": "Severity",
+   "options": "Low\nMedium\nHigh\nCritical"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-30 11:36:25.213784",
+ "modified_by": "Administrator",
+ "module": "Demo App",
+ "name": "Doctor Recommendation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "patient"
+}

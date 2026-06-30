@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "RECORDING-.YYYY-.####",
+ "creation": "2026-06-30 11:00:08.256264",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patients_video_recording_section",
+  "session_title",
+  "patient",
+  "recording_date",
+  "video_recorder",
+  "recording_status",
+  "recorded_video"
+ ],
+ "fields": [
+  {
+   "fieldname": "patients_video_recording_section",
+   "fieldtype": "Section Break",
+   "label": "Patient's Video Recording"
+  },
+  {
+   "fieldname": "session_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Session Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient Record",
+   "reqd": 1
+  },
+  {
+   "fieldname": "recording_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Recording Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "video_recorder",
+   "fieldtype": "HTML",
+   "is_virtual": 1,
+   "label": "Video Recorder"
+  },
+  {
+   "fieldname": "recording_status",
+   "fieldtype": "Select",
+   "label": "Recording Status",
+   "options": "Idle\nRecording\nPaused\nStopped"
+  },
+  {
+   "fieldname": "recorded_video",
+   "fieldtype": "Attach",
+   "label": "Recorded Video"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-30 11:36:24.697686",
+ "modified_by": "Administrator",
+ "module": "Demo App",
+ "name": "Video Recorder",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "patient"
+}
