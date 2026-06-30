@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "VITALS-.YYYY-.####",
+ "creation": "2026-06-30 10:48:48.815536",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient_vitals_data_section",
+  "patient",
+  "recorded_at",
+  "heart_rate_bpm",
+  "blood_pressure_systolic",
+  "blood_pressure_diastolic",
+  "spo2_",
+  "temperature",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient_vitals_data_section",
+   "fieldtype": "Section Break",
+   "label": "Patient Vitals Data"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient Record",
+   "reqd": 1
+  },
+  {
+   "fieldname": "recorded_at",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Recorded At",
+   "reqd": 1
+  },
+  {
+   "fieldname": "heart_rate_bpm",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Heart Rate (BPM)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "blood_pressure_systolic",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Blood Pressure (Systolic)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "blood_pressure_diastolic",
+   "fieldtype": "Int",
+   "label": "Blood Pressure (Diastolic)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "spo2_",
+   "fieldtype": "Float",
+   "label": "SpO2 (%)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Float",
+   "label": "Temperature (\u00b0C)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-30 11:36:25.374594",
+ "modified_by": "Administrator",
+ "module": "Demo App",
+ "name": "Patient Vitals",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "patient"
+}
